@@ -21,7 +21,7 @@
 - 使用CI工具，自动化成Nginx容器镜像，并持续文档部署；
 - 配合IDaaS工具，对Nginx做用户鉴权登录；
 
-## Changelog
+## Doclog
 
 2019-04-08: 初稿
 
