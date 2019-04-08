@@ -1,0 +1,15 @@
+site_name: docsite
+theme: 
+  name: material
+
+nav:
+- Docsite简介: 'index.md'
+- 开始动手！: 'gettingstarted.md'
+# - Markdown语法:
+- Markdown快速入门: 'markdown.md'
+# - 版本管理:
+- Git版本管理快速入门: 'git.md'
+# - 有什么Git版本管理工具: 'git-tools.md'
+# - 文档管理:
+- 产品文档什么结构: 'docstruct.md'
+- 进阶工具使用: 'advanced.md'
