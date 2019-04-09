@@ -116,3 +116,9 @@ Markdown中想要引用HTML原型图，你可以：
 ```
 [某功能的原型图查看](./axure/function.html)
 ```
+
+3. 变成图片
+
+```
+![图片](./images/img.png)
+```

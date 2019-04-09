@@ -2,7 +2,7 @@
 
 ## 内容结构
 - prd：产品文档 (Product Requirement Document)
-    - frames：总体产品架构
+    - archi：总体产品架构
     - roles：用户角色
     - ue：原型与交互
     - functions：功能清单
@@ -28,6 +28,8 @@
 - mkdocs.yml：网站配置
 - /其它目录/：一些源文件
 - /docs/：markdown文档主目录
+    - /images/：相关图片
+    - /axure/：原型文件
     - /prd/： 产品文档
     - /rd/： 研发文档
     - /help/：帮助文档
