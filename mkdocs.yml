@@ -20,4 +20,5 @@ nav:
     - '公共请求参数': 'sign_api_v2/request_param.md'
     - '签名生成': 'sign_api_v2/sign_way.md'
     - '生成RSA密钥': 'sign_api_v2/key_allocate.md'
-    - '自助排查'': 'sign_api_v2/sign_troubleshooting.md'
+    - '自助排查': 'sign_api_v2/sign_troubleshooting.md'
+    

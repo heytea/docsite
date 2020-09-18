@@ -11,8 +11,8 @@
 ### 2. 安装mkdocs
 
 ```shell
-pip install mkdocs
-pip install mkdocs-material
+pip3 install mkdocs
+pip3 install mkdocs-material
 ```
 
 ### 3. 使用mkdocs
