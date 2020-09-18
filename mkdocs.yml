@@ -3,13 +3,20 @@ theme:
   name: material
 
 nav:
-- Docsite简介: 'index.md'
-- 开始动手！: 'gettingstarted.md'
-# - Markdown语法:
-- Markdown快速入门: 'markdown.md'
-# - 版本管理:
-- Git版本管理快速入门: 'git.md'
-# - 有什么Git版本管理工具: 'git-tools.md'
-# - 文档管理:
-- 产品文档什么结构: 'docstruct.md'
-- 进阶工具使用: 'advanced.md'
+- '文档开发说明':
+  - Docsite简介: 'index.md'
+  - 开始动手！: 'gettingstarted.md'
+  # - Markdown语法:
+  - Markdown快速入门: 'markdown.md'
+  # - 版本管理:
+  - Git版本管理快速入门: 'git.md'
+  # - 有什么Git版本管理工具: 'git-tools.md'
+  # - 文档管理:
+  - 产品文档什么结构: 'docstruct.md'
+  - 进阶工具使用: 'advanced.md'
+- '第三方开发接入':
+  - '接口规则v2':
+    - '协议规则': 'sign_api_v2/protocal.md'
+    - '公共请求参数': 'sign_api_v2/request_param.md'
+    - '签名生成': 'sign_api_v2/sign_way.md'
+    - '生成RSA密钥': 'sign_api_v2/key_allocate.md'
