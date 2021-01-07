@@ -25,7 +25,7 @@ HTTP 请求 body 必须是一个 JSON，并且必须包含以下公共请求参�
 字段名 | 类型 | 是否必填 | 描述 | 示例
 ------- | ------- | ------- | ------- | -------
 clientId | String | 是 | 喜茶分配给第三方商户的 client ID | exampleClientID
-timestamp | String | 是 | 创建签名时的时间戳，单位：毫秒 | 1600412480000
+timestamp | String | 是 | 创建签名时的时间戳，单位：秒 | 1600412480
 payload | JSON | 是 | 请求正文，业务数据都需要封装在这个字段里面，否则不会参与接口签名验证 | {"order":"3423768327","action":"pay"}
 sign | String | 是 | 签名结果  | dFCBnsgzv/2h...
 
@@ -34,7 +34,7 @@ sign | String | 是 | 签名结果  | dFCBnsgzv/2h...
 ```
 {
     "clientId": "exampleClientID",
-    "timestamp": "1600412480000",
+    "timestamp": "1600412480",
     "payload": "{\"order\":\"3423768327\",\"action\":\"pay\"}",
     "sign": "dFCBnsgzv/2h..."
 }
@@ -115,7 +115,7 @@ OpenSSL> exit
 
 #### 准备示例数据
 1. clientId = exampleClientID
-2. timestamp = 1600412480000
+2. timestamp = 1600412480
 3. private-key = MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIB...
 4. payload = {"aaa":"dddd"}
 
@@ -124,7 +124,7 @@ OpenSSL> exit
 待签名字符串
 
 ```
-clientId=exampleClientID&payload={"aaa":"dddd"}&timestamp=1600412480000
+clientId=exampleClientID&payload={"aaa":"dddd"}&timestamp=1600412480
 ```
 
 #### 计算签名
@@ -179,8 +179,8 @@ public class SignTest {
             + "CMLlUC9TTKOAoTg5r3QpxKM=";
         // @formatter:on
 
-        // Long timestamp = Instant.now().toEpochMilli(); // 1600761549300 1600412480000
-        String toSignString = "clientId=exampleClientID&payload={\"aaa\":\"dddd\"}&timestamp=1600412480000";
+        // Long timestamp = Instant.now().getEpochSecond(); // 1600761549 1600412480
+        String toSignString = "clientId=exampleClientID&payload={\"aaa\":\"dddd\"}&timestamp=1600412480";
 
         PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(Base64.getDecoder().decode(privateKeyString));
         KeyFactory fac = KeyFactory.getInstance("RSA");
@@ -210,7 +210,7 @@ public class SignTest {
             + "/wIDAQAB";
         // @formatter:on
 
-        String toSignString = "clientId=exampleClientID&payload={\"aaa\":\"dddd\"}&timestamp=1600412480000";
+        String toSignString = "clientId=exampleClientID&payload={\"aaa\":\"dddd\"}&timestamp=1600412480";
 
         String signData =
             "YbIMLiDzEmv8JR4nyiuGR7K66XE1c7oAhGPRLTwYENKpEC3tkfsRv6uXtb5lHPh8Rs7HQSka0TwEKKZQlDkmaoalf/Cxdextz4DZ+XDsulqTV6psSJgbOg6DaAr+4S9allsm7O0D2qUt9wcOxy04WxFczw19SN7SoeDtl8M6mHxqh4LNqMEV5fZr2cJFplHsIXzvE9U0S5EYO/TpxWO4O5sZwigMo4TdHl/t8cJrSYQKB5aRK5t7wHqVW7SbtV1HeczMVYJzUvnzq8DauJRCCUXlnwTn31zZvuqg8cLTDQVh9jTLRmuEk/YAfEwOKftJQtrved3Eu4z2nhb6n5+KLQ==";
