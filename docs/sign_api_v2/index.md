@@ -193,7 +193,7 @@ public class SignTest {
         String sign = Base64.getEncoder().encodeToString(signature);
 
         System.out.println(sign);
-        // YbIMLiDzEmv8JR4nyiuGR7K66XE1c7oAhGPRLTwYENKpEC3tkfsRv6uXtb5lHPh8Rs7HQSka0TwEKKZQlDkmaoalf/Cxdextz4DZ+XDsulqTV6psSJgbOg6DaAr+4S9allsm7O0D2qUt9wcOxy04WxFczw19SN7SoeDtl8M6mHxqh4LNqMEV5fZr2cJFplHsIXzvE9U0S5EYO/TpxWO4O5sZwigMo4TdHl/t8cJrSYQKB5aRK5t7wHqVW7SbtV1HeczMVYJzUvnzq8DauJRCCUXlnwTn31zZvuqg8cLTDQVh9jTLRmuEk/YAfEwOKftJQtrved3Eu4z2nhb6n5+KLQ==
+        // foHCGM7eyNVx11jVLtjGv16xAM5Y4+m2NvxsfGQhM25q+gGewgDzbPhvTn/W3w1TuNIUfZLCtlUaU/mBLTUw6Z0AWXxWLseA9vUdiZTENcwdIArHgN9VyKwCEopDQwT1GRaBx/V1Rp7nEywyC4MDyImUBLEmehXZT4vh0hSYOtQ7/Oaku0jf5hEULyGCwIWSettWoO3QAjB9Dmim4I5WSG2NcChwVSPGv6ucjDGfCTXVPNR8CtgjDJimRDbehqPBy36MZHWIgKDuRnf9NrIai1+JHnJCUHAhRWpBYGERpiWpS0XEAn4OGmo7K8xDdexHjXt3yZ0pyWJ2o8pAQKDCTw==
 
     }
 
@@ -213,7 +213,7 @@ public class SignTest {
         String toSignString = "clientId=exampleClientID&payload={\"aaa\":\"dddd\"}&timestamp=1600412480";
 
         String signData =
-            "YbIMLiDzEmv8JR4nyiuGR7K66XE1c7oAhGPRLTwYENKpEC3tkfsRv6uXtb5lHPh8Rs7HQSka0TwEKKZQlDkmaoalf/Cxdextz4DZ+XDsulqTV6psSJgbOg6DaAr+4S9allsm7O0D2qUt9wcOxy04WxFczw19SN7SoeDtl8M6mHxqh4LNqMEV5fZr2cJFplHsIXzvE9U0S5EYO/TpxWO4O5sZwigMo4TdHl/t8cJrSYQKB5aRK5t7wHqVW7SbtV1HeczMVYJzUvnzq8DauJRCCUXlnwTn31zZvuqg8cLTDQVh9jTLRmuEk/YAfEwOKftJQtrved3Eu4z2nhb6n5+KLQ==";
+            "foHCGM7eyNVx11jVLtjGv16xAM5Y4+m2NvxsfGQhM25q+gGewgDzbPhvTn/W3w1TuNIUfZLCtlUaU/mBLTUw6Z0AWXxWLseA9vUdiZTENcwdIArHgN9VyKwCEopDQwT1GRaBx/V1Rp7nEywyC4MDyImUBLEmehXZT4vh0hSYOtQ7/Oaku0jf5hEULyGCwIWSettWoO3QAjB9Dmim4I5WSG2NcChwVSPGv6ucjDGfCTXVPNR8CtgjDJimRDbehqPBy36MZHWIgKDuRnf9NrIai1+JHnJCUHAhRWpBYGERpiWpS0XEAn4OGmo7K8xDdexHjXt3yZ0pyWJ2o8pAQKDCTw==";
 
         X509EncodedKeySpec keySpec = new X509EncodedKeySpec(Base64.getDecoder().decode(publicKeyString));
         KeyFactory fac = KeyFactory.getInstance("RSA");
