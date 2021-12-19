@@ -35,7 +35,7 @@ sign | String | 是 | 签名结果  | dFCBnsgzv/2h...
 {
     "clientId": "exampleClientID",
     "timestamp": "1600412480",
-    "payload": "{\"order\":\"3423768327\",\"action\":\"pay\"}",
+    "payload": {"order":"3423768327","action":"pay"},
     "sign": "dFCBnsgzv/2h..."
 }
 ```
