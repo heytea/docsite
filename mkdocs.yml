@@ -17,5 +17,7 @@ nav:
 - '第三方开发接入':
   - '签名接口 v1': 'sign_api_v1/index.md'
   - '签名接口 v2': 'sign_api_v2/index.md'
-  - '组织信息接口': 'dept_api/index.md'
+- '员工信息':
   - '员工信息接口': 'staff_api/index.md'
+- '组织信息':
+  - '组织信息接口': 'dept_api/index.md'
