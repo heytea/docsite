@@ -16,6 +16,7 @@
 | --size     | integer | 否    | 查询的条数(默认值1000,限制最大为1000)                                          | 1000                                   |
 | --source   | String  | 是    | 数据来源（E_ROAD->EHR系统，PRM->事业合伙人）                                    | E_ROAD                                 |
 | --selector | List<String> | 否    | 查询字段集(id,deptCode,outDeptCode,deptName,ifStore,parentDeptCode,status,source) |                                    |
+
 - **请求示例**
 ```
 {
