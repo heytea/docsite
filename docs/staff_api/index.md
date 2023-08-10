@@ -49,7 +49,7 @@
 
             {
               
-              "id": "123456",
+              "id": 123456,
               "staffCode": "ER_T123456",
               "outStaffCode":"T123456",
               "jobNumber": "T123456",
@@ -81,7 +81,7 @@
 
 | 字段名           | 类型            | 描述                             | 示例            |
 |:--------------|:--------------|:-------------------------------|:--------------|
-| id	           | String        | id                             | 123456        |
+| id	           | Long          | id                             | 123456        |
 | staffCode     | 	String       | 员工编码                           | ER_T123456    |
 | outStaffCode	 | String        | 外部员工编号                         | T123456       |
 | jobNumber	    | String        | 员工工号                           | T123456       |
@@ -91,5 +91,5 @@
 | positionNames | 	List<String> | 用户岗位名称                         | ["店员","店长"]   |
 | phoneNumber   | 	String       | 用户手机号码                         | 18812341234"  |
 | status	       | String        | TERMINATION-离职；ON_WORK-在职      | ON_WORK       |
-| source        | String  | 数据来源（E_ROAD->EHR系统，PRM->事业合伙人） | E_ROAD        |
+| source        | String        | 数据来源（E_ROAD->EHR系统，PRM->事业合伙人） | E_ROAD        |
 
