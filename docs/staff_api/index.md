@@ -83,7 +83,7 @@
 |:--------------|:--------------|:-------------------------------|:--------------|
 | id	           | Long          | id                             | 123456        |
 | staffCode     | 	String       | 员工编码                           | ER_T123456    |
-| outStaffCode	 | String        | 外部员工编号                         | T123456       |
+| outStaffCode	 | String        | 源系统员工编码                        | T123456       |
 | jobNumber	    | String        | 员工工号                           | T123456       |
 | name	         | String        | 用户姓名                           | 张三            |
 | depts         | 	List<String> | 用户所属组织                         | ["123","234"] |

@@ -63,7 +63,7 @@
 |:----------------------|:--------|:-------------------------------|:-------|
 | id	                   | Long    | id                             | 123    |
 | deptCode              | 	String | 组织编码                           | 123456 |
-| outDeptCode           | 	String | 外部组织编码                         | 123456 |
+| outDeptCode           | 	String | 源系统组织编码                        | 123456 |
 | deptName	             | String  | 组织名称                           | 测试组织名称 |
 | ifStore	              | Boolean | TRUE-门店；FALSE-非门店              | true   |
 | parentDeptCode        | 	String | 父级组织编码                         | 1122   |
