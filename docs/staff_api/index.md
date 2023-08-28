@@ -89,7 +89,7 @@
 | depts         | 	List<String> | 用户所属组织                         | ["123","234"] |
 | positions     | 	List<String> | 用户岗位                           | ["1","2"]     |
 | positionNames | 	List<String> | 用户岗位名称                         | ["店员","店长"]   |
-| phoneNumber   | 	String       | 用户手机号码                         | 18812341234"  |
+| phoneNumber   | 	String       | 用户手机号码                         | 18812341234   |
 | status	       | String        | TERMINATION-离职；ON_WORK-在职      | ON_WORK       |
 | source        | String        | 数据来源（E_ROAD->EHR系统，PRM->事业合伙人） | E_ROAD        |
 
