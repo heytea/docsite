@@ -20,3 +20,4 @@ nav:
 - '员工模块':
   - '员工信息接口': 'staff_api/index.md'
   - '组织信息接口': 'dept_api/index.md'
+  - '岗位信息接口': 'position_api/index.md'
