@@ -12,7 +12,7 @@
 | timestamp              | String       | 是    | 请求时间戳（东八区）用于做请求时效验证，单位：秒                                                                           | 1600412480                             |
 | sign                   | String       | 是    | 签名结果                                                                                               | dFCBnsgzv/2h...                        |
 | payload                | Object       | 是    | 请求正文                                                                                               |  |
-| --cursorId             | Long         | 是    | 查询的id (默认按id排序获取1000条数据,传具体id数据查询大于该id的数据)                                                         | 1                                      |
+| --cursorId             | Long         | 否    | 查询的id (默认按id排序获取1000条数据,传具体id数据查询大于该id的数据)                                                         | 1                                      |
 | --size                 | integer      | 否    | 查询的条数(默认值1000,限制最大为1000)                                                                           | 1000                                   |
 | --source               | String       | 是    | 数据来源（E_ROAD->EHR系统，PRM->事业合伙人）                                                                     | E_ROAD                                 |
 | --lastUpdatedTimeStart | String       | 否    | 适用于增量更新场景的数据获取，每次从上一次的更新时间往后增量拉取数据。格式： yyyy-MM-dd HH:mm:ss                                              | 2023-10-10 00:00:00 |
