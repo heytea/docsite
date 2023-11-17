@@ -16,6 +16,8 @@
 | --size     | integer      | 否    | 查询的条数(默认值1000,限制最大为1000)                                                                           | 1000                                   |
 | --source   | String       | 是    | 数据来源（E_ROAD->EHR系统，PRM->事业合伙人）                                                                     | E_ROAD                                 |
 | --selector | List<String> | 否    | 查询字段集(id,deptCode,outDeptCode,deptName,ifStore,parentDeptCode,status,financialBusinessCode,source) |                                    |
+| --lastUpdatedTimeStart | String       | 否    | 适用于增量更新场景的数据获取，每次从上一次的更新时间往后增量拉取数据。格式： yyyy-MM-dd HH:mm:ss                                              | 2023-10-10 00:00:00 |
+| --lastUpdatedTimeEnd   | String       | 否    | 根据修改时间筛选 end 格式： yyyy-MM-dd HH:mm:ss                                                                    | 2023-10-10 00:00:00 |
 
 - **请求示例**
 ```
@@ -51,7 +53,8 @@
               "parentDeptCode": "1122",
               "status": "ACTIVE",
               "financialBusinessCode":"123456",
-              "source":"E_ROAD"
+              "source":"E_ROAD",
+              "lastUpdatedTime":"2023-10-10 00:00:00"
         }
     ]
 }
@@ -70,3 +73,4 @@
 | status                | 	String | ACTIVE-有效；INACTIVE-无效          | ACTIVE |
 | financialBusinessCode | 	String | 门店经营代码                         | 123456 |
 | source                | String  | 数据来源（E_ROAD->EHR系统，PRM->事业合伙人） | E_ROAD |
+| lastUpdatedTime | String        | 最近更新的时间                        | 2023-10-10 00:00:00 |
