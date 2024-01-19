@@ -1,4 +1,4 @@
-# UPMS提供给第三方系统获取组织信息API
+# UPMS提供给第三方系统获取岗位信息API
 - **请求URL**
 > [/api/service-staff/signapi/v2/position](#)
 - **请求方式**
